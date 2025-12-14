@@ -122,7 +122,7 @@ const PRODUCTS = [
   },
   { sku:"Tulpenstrauß", name:"Tulpenstrauß", price:29.90, tag:"getwell", mood:"sanft", size:"M", care:"Stiele schräg", stock:7,
     desc:"Sehr ruhig und weich. Gute Besserung & sensible Anlässe.",
-    img:"https://images.unsplash.com/photo-1519682337058-a94d519337bc?q=80&w=1600&auto=format&fit=crop",
+    img:"4AF8CAFC-DAB7-4381-BCCE-339DDB674E2D.jpeg",
     featured: 5
   },
   { sku:"fruehling", name:"Frühling", price:33.90, tag:"birthday", mood:"leicht · freundlich", size:"M", care:"nicht in Sonne", stock:5,
@@ -770,6 +770,7 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
 
