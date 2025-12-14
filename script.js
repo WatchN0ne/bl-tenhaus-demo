@@ -117,7 +117,7 @@ const PRODUCTS = [
   },
   { sku:"abendrot", name:"Abendrot", price:36.90, tag:"love", mood:"tief · edel", size:"L", care:"Wasser täglich", stock:4,
     desc:"Satter, eleganter Akzent. Liebe ohne Übertreibung.",
-    img:"https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop",
+    img:"46EEFF9B-4930-4609-8A27-3161CE93E7B5.jpeg",
     featured: 4
   },
   { sku:"still", name:"Still", price:29.90, tag:"getwell", mood:"sanft", size:"M", care:"Stiele schräg", stock:7,
@@ -770,6 +770,7 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
 
