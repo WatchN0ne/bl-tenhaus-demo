@@ -921,3 +921,17 @@ select {
   object-fit: cover;
   display: block;
 }
+
+/* =========================
+   Signature – Doppelbox FIX
+========================= */
+
+/* Alles ausblenden, was evtl. automatisch erzeugt wird */
+.signature > *:not(.signature-box) {
+  display: none !important;
+}
+
+/* Signature-Box eindeutig definieren */
+.signature-box {
+  display: block !important;
+}
