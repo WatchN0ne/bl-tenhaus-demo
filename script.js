@@ -105,12 +105,12 @@ const PRODUCTS = [
     img:"914855F6-103E-4AF0-A278-A611AD3F2D1E.jpeg",
     featured: 1
   },
-  { sku:"wiesenrand", name:"Wiesenrand", price:31.90, tag:"thanks", mood:"natürlich", size:"M", care:"frisches Wasser", stock:3,
+  { sku:"Wiesenstrauß", name:"Wiesenstrauß", price:31.90, tag:"thanks", mood:"natürlich", size:"M", care:"frisches Wasser", stock:3,
     desc:"Locker, organisch, leicht. Ideal als Danke & Alltag.",
     img:"https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=1600&auto=format&fit=crop",
     featured: 2
   },
-  { sku:"leinenweiss", name:"Leinenweiß", price:27.90, tag:"neutral", mood:"klar · hell", size:"S", care:"kühl stellen", stock:6,
+  { sku:"Bunte Rosenstrauß", name:"Bunte Rosenstrauß", price:27.90, tag:"neutral", mood:"klar · hell", size:"S", care:"kühl stellen", stock:6,
     desc:"Helle Ruhe. Minimalistisch, clean — ohne kitschige Wirkung.",
     img:"https://images.unsplash.com/photo-1508610048659-a06b669e3321?q=80&w=1600&auto=format&fit=crop",
     featured: 3
@@ -770,5 +770,6 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
