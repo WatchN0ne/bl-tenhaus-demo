@@ -120,7 +120,7 @@ const PRODUCTS = [
     img:"46EEFF9B-4930-4609-8A27-3161CE93E7B5.jpeg",
     featured: 4
   },
-  { sku:"still", name:"Still", price:29.90, tag:"getwell", mood:"sanft", size:"M", care:"Stiele schräg", stock:7,
+  { sku:"Tulpenstrauß", name:"Tulpenstrauß", price:29.90, tag:"getwell", mood:"sanft", size:"M", care:"Stiele schräg", stock:7,
     desc:"Sehr ruhig und weich. Gute Besserung & sensible Anlässe.",
     img:"https://images.unsplash.com/photo-1519682337058-a94d519337bc?q=80&w=1600&auto=format&fit=crop",
     featured: 5
@@ -770,6 +770,7 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
 
