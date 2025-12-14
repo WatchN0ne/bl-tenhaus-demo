@@ -876,3 +876,31 @@ h3{font-size: 1.25rem}
     0 10px 30px rgba(0,0,0,0.08);
 }
 
+
+/* =========================
+   iOS Safari – Blau ZWINGEND entfernen
+========================= */
+
+button,
+a,
+input,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: inherit;
+}
+
+.filter-chip,
+.filter-btn,
+.filterTag {
+  color: #2f3e35 !important;
+  background: rgba(255,255,255,0.65) !important;
+  border-color: rgba(47,62,53,0.25) !important;
+}
+
+.filter-chip:active,
+.filter-btn:active,
+.filterTag:active {
+  background: linear-gradient(135deg, #dfe8e2, #cfdcd3) !important;
+  color: #1f2d26 !important;
+}
