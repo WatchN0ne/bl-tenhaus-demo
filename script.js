@@ -132,17 +132,17 @@ const PRODUCTS = [
   },
   { sku:"weissraum", name:"Weißraum", price:28.90, tag:"thanks", mood:"clean", size:"S", care:"Vase sauber", stock:2,
     desc:"Sehr clean, sehr hochwertig. Danke, Neutral, Büro.",
-    img:"https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1600&auto=format&fit=crop",
+    img:"https://kolberger.de/wp-content/uploads/2020/01/Rosen-Kamille.jpg",
     featured: 7
   },
   { sku:"ruhepol", name:"Ruhepol", price:32.90, tag:"neutral", mood:"balance", size:"M", care:"Blätter entfernen", stock:3,
     desc:"Ausbalanciert, ruhig, perfekt als ‚einfach schön‘.",
-    img:"https://images.unsplash.com/photo-1487070183336-b863922373d4?q=80&w=1600&auto=format&fit=crop",
+    img:"https://bloomydays.cstatic.io/media/9c/3a/fc/1751277335/WBD0705_Sockel_(1).jpg?ts=1751277336",
     featured: 8
   },
   { sku:"waldrand", name:"Waldrand", price:35.90, tag:"love", mood:"grün · edel", size:"L", care:"kühl lagern", stock:4,
     desc:"Grün-Details, elegant und modern. Liebe, aber sehr erwachsen.",
-    img:"https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1600&auto=format&fit=crop",
+    img:"https://www.myflower.ch/2028-large_default/blumenstrauss-weisse-sinfonie.jpg",
     featured: 9
   }
 ];
@@ -770,6 +770,7 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
 
