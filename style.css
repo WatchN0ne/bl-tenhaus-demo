@@ -935,3 +935,30 @@ select {
 .signature-box {
   display: block !important;
 }
+
+/* =========================
+   Signature – zweite Box ENTFERNEN (FINAL FIX)
+========================= */
+
+/* Der leere Signature-Container (ohne Bild) */
+.signature .card:has(:not(img)) {
+  display: none !important;
+}
+
+/* Sicherheit: nur die Box MIT Bild zeigen */
+.signature img {
+  display: block;
+}
+
+.signature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* iOS Fallback – explizit leere Box ausblenden */
+.signature .card:empty,
+.signature .preview:empty,
+.signature .signature-preview:empty {
+  display: none !important;
+}
