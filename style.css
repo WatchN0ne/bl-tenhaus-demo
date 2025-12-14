@@ -962,3 +962,12 @@ select {
 .signature .signature-preview:empty {
   display: none !important;
 }
+
+/* =========================
+   SIGNATURE – FINALER FIX
+   (zweite Box entfernen)
+========================= */
+
+.signature > div:not(:first-of-type) {
+  display: none !important;
+}
