@@ -904,3 +904,20 @@ select {
   background: linear-gradient(135deg, #dfe8e2, #cfdcd3) !important;
   color: #1f2d26 !important;
 }
+
+/* ===== Signature Stil Box ===== */
+
+.signature-box {
+  margin-top: 16px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f2f4f1, #e6ebe7);
+  min-height: 200px;
+}
+
+.signature-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
