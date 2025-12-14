@@ -1,0 +1,571 @@
+<<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Blütenhaus — Kuratierte Sträuße zur Abholung</title>
+  <meta name="description" content="Blütenhaus — 9 kuratierte Sträuße. Bestellung per WhatsApp. Nur Abholung: Heute oder Morgen." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+
+<!-- LOADER -->
+<div id="pageLoader" class="pageLoader" aria-hidden="true">
+  <div class="loaderCard">
+    <div class="roseMark" aria-hidden="true">
+      <!-- Elegant rose outline -->
+      <svg viewBox="0 0 64 64">
+        <path d="M32 56c-7.5 0-14-6-14-14 0-6.2 4.4-11.4 10.2-13.1-1.6-1.1-2.7-3-2.7-5.1 0-3.3 2.7-6 6-6 2 0 3.8 1 4.9 2.6.8-3.8 4.2-6.6 8.2-6.6 4.6 0 8.4 3.8 8.4 8.4 0 3.4-2.1 6.4-5.1 7.7 3.5 2.4 5.9 6.5 5.9 11.2 0 8-6.5 14-14 14H32z"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 32c1.4 1.8 4.2 3.2 8 3.2 4 0 7-1.5 8.6-3.6M30 20c-1.8 1-3 2.4-3.6 4.2M38 19c2.2.8 3.8 2.2 4.6 4.2"
+              fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity=".78"/>
+        <path d="M32 56v-8M32 48c-2.5 0-5 .8-7 2.2"
+              fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+      </svg>
+    </div>
+
+    <div class="loaderText">
+      <div class="loaderTitle">Blütenhaus</div>
+      <div class="loaderSub">Handgebunden · Nur Abholung</div>
+    </div>
+
+    <div class="loaderBar" aria-hidden="true"><span></span></div>
+    <div class="loaderHint">Einen Moment — wir bereiten alles ruhig vor.</div>
+  </div>
+</div>
+
+<!-- BACKGROUND -->
+<div class="bg" aria-hidden="true">
+  <div class="blob blobA"></div>
+  <div class="blob blobB"></div>
+  <div class="grain"></div>
+</div>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="wrap topbarInner">
+    <a class="brand" href="#top" aria-label="Blütenhaus">
+      <span class="brandName">Blütenhaus</span>
+      <span class="brandMeta">Sträuße · Abholung · Heute/Morgen</span>
+    </a>
+
+    <button class="burger touch" id="burger" type="button" aria-label="Menü" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a class="navLink" href="#auswahl">Auswahl</a>
+      <a class="navLink" href="#atelier">Atelier</a>
+      <a class="navLink" href="#ablauf">Ablauf</a>
+      <a class="navLink" href="#kundenstimmen">Stimmen</a>
+      <a class="navLink" href="#faq">FAQ</a>
+
+      <button class="cartBtn touch" id="openCart" type="button">
+        Warenkorb <span class="badge" id="cartCount">0</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap heroGrid">
+      <div class="heroCopy reveal">
+        <p class="kicker">9 kuratierte Sträuße · Nur Abholung</p>
+
+        <h1 class="heroTitle">
+          Blumen, die <span class="accent">entscheiden</span> helfen —<br/>
+          statt zu überfordern.
+        </h1>
+
+        <p class="heroLead">
+          Du wählst einen Stil, nicht 50 Varianten. Wir binden frisch — modern, ruhig, harmonisch.
+        </p>
+
+        <div class="heroActions">
+          <a class="btn btnPrimary touch" href="#auswahl">Zur Auswahl</a>
+          <button class="btn btnGhost touch" id="openCart2" type="button">Warenkorb öffnen <span class="arrow">→</span></button>
+        </div>
+
+        <div class="heroTrust">
+          <div class="trust"><b>Frisch</b><span>täglich vorbereitet</span></div>
+          <div class="trust"><b>Ruhig</b><span>keine grellen Farben</span></div>
+          <div class="trust"><b>Schnell</b><span>Abholung heute/morgen</span></div>
+        </div>
+
+        <div class="miniBanner">
+          <span class="dot"></span>
+          <span>Bestellung per WhatsApp · Bestätigung in Kürze</span>
+        </div>
+      </div>
+
+      <div class="heroArt reveal">
+        <div class="heroCard">
+          <div class="heroCardTop">
+            <span class="pill">Heute/Morgen</span>
+            <span class="pill pillSoft">Nur Abholung</span>
+          </div>
+          <h3>Signature-Stil</h3>
+          <p class="muted">Sanfte Kontraste, klare Formen. Keine Kitsch-Optik.</p>
+
+          <div class="heroCardMedia" aria-hidden="true">
+            <div class="mediaGlow"></div>
+          </div>
+
+          <div class="heroCardBottom">
+            <button class="btn btnMini btnPrimary touch" id="jumpToFilters" type="button">Stil wählen</button>
+            <button class="btn btnMini btnGhost touch" id="openDetailFromHero" type="button">Beispiel ansehen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heroFade" aria-hidden="true"></div>
+  </section>
+
+  <!-- AUSWAHL -->
+  <section id="auswahl" class="section">
+    <div class="wrap">
+
+      <div class="sectionHead reveal">
+        <div>
+          <h2>Auswahl</h2>
+          <p class="muted">Filter nach Anlass. Stil bleibt ruhig — Farben „küssen sich“.</p>
+        </div>
+
+        <div class="controls">
+          <div class="control">
+            <label for="pickupDay">Abholung</label>
+            <select id="pickupDay" class="select touch">
+              <option value="Heute">Heute</option>
+              <option value="Morgen">Morgen</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label for="pickupTime">Uhrzeit</label>
+            <select id="pickupTime" class="select touch"></select>
+          </div>
+
+          <div class="control search">
+            <label for="searchInput">Suche</label>
+            <input id="searchInput" class="input" type="search" placeholder="z.B. ruhig, weiß, modern…" />
+          </div>
+
+          <div class="control">
+            <label for="sortSelect">Sortieren</label>
+            <select id="sortSelect" class="select touch">
+              <option value="featured">Empfohlen</option>
+              <option value="priceAsc">Preis: aufsteigend</option>
+              <option value="priceDesc">Preis: absteigend</option>
+              <option value="nameAsc">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="chip touch isActive" data-filter="all" type="button">Alles</button>
+        <button class="chip touch" data-filter="neutral" type="button">Neutral</button>
+        <button class="chip touch" data-filter="love" type="button">Liebe</button>
+        <button class="chip touch" data-filter="thanks" type="button">Danke</button>
+        <button class="chip touch" data-filter="birthday" type="button">Geburtstag</button>
+        <button class="chip touch" data-filter="getwell" type="button">Gute Besserung</button>
+      </div>
+
+      <div class="productGrid" id="productGrid" aria-live="polite"></div>
+
+      <div class="note reveal">
+        <div class="noteDot" aria-hidden="true"></div>
+        <p class="muted">
+          Fotos sind Stil-Beispiele. Saisonale Blumen — gleiche Stimmung, gleiche Form, gleiche Qualität.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATELIER -->
+  <section id="atelier" class="section soft">
+    <div class="wrap">
+      <div class="sectionHead reveal">
+        <div>
+          <h2>Atelier</h2>
+          <p class="muted">Handwerk, Ruhe, Proportion. Keine „überladene Deko“ — sondern Stil.</p>
+        </div>
+      </div>
+
+      <div class="atelierGrid">
+        <article class="card reveal">
+          <h3>Jeden Morgen frisch</h3>
+          <p class="muted">Wir bereiten die Looks täglich vor. Du holst ab — ohne Stress.</p>
+          <div class="cardLine" aria-hidden="true"></div>
+          <ul class="list">
+            <li>Frische Bindung</li>
+            <li>Saubere Proportion</li>
+            <li>Klare Farbwelt</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Natürlich — aber modern</h3>
+          <p class="muted">Organische Formen, elegante Linien. Nichts beißt sich.</p>
+          <div class="cardLine" aria-hidden="true"></div>
+          <ul class="list">
+            <li>Weniger, aber besser</li>
+            <li>Harmonische Kontraste</li>
+            <li>Premium-Finish</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Für echte Anlässe</h3>
+          <p class="muted">Liebe, Danke, Geburtstag — oder einfach „neutral“ und schön.</p>
+          <div class="cardLine" aria-hidden="true"></div>
+          <ul class="list">
+            <li>Kuratierte Auswahl</li>
+            <li>Abholung heute/morgen</li>
+            <li>WhatsApp-Bestellung</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="wideBanner reveal">
+        <div>
+          <h3>Wenig Auswahl — starke Wirkung.</h3>
+          <p class="muted">Du kaufst schneller, weil du dich sicher fühlst.</p>
+        </div>
+        <a class="btn btnPrimary touch" href="#auswahl">Jetzt wählen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section id="ablauf" class="section">
+    <div class="wrap">
+      <div class="sectionHead reveal">
+        <div>
+          <h2>Ablauf</h2>
+          <p class="muted">In 60 Sekunden bestellt. Wir bestätigen kurz — dann abholen.</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="stepNum">01</div>
+          <h3>Stil wählen</h3>
+          <p class="muted">Filter oder Suche. 9 Looks — klare Entscheidung.</p>
+        </div>
+        <div class="step reveal">
+          <div class="stepNum">02</div>
+          <h3>Abholung festlegen</h3>
+          <p class="muted">Heute oder Morgen + Uhrzeit auswählen.</p>
+        </div>
+        <div class="step reveal">
+          <div class="stepNum">03</div>
+          <h3>WhatsApp senden</h3>
+          <p class="muted">Text wird automatisch erstellt. Du klickst nur noch „Senden“.</p>
+        </div>
+      </div>
+
+      <div class="split reveal">
+        <div class="splitCard">
+          <h3>Adresse</h3>
+          <p class="muted">Hier später echte Adresse einsetzen.</p>
+          <div class="splitRow">
+            <span class="muted">Öffnungszeiten</span>
+            <strong>Mo–Sa 09:00–18:00</strong>
+          </div>
+          <div class="splitRow">
+            <span class="muted">Abholung</span>
+            <strong>Heute/Morgen</strong>
+          </div>
+          <button class="btn btnGhost touch" id="copyInfo" type="button">Info kopieren</button>
+        </div>
+
+        <div class="splitCard">
+          <h3>Hinweis</h3>
+          <p class="muted">Wir binden saisonal. Stil bleibt gleich — Blumen können variieren.</p>
+          <div class="splitHint">
+            <span class="dot"></span>
+            <span>Du bekommst ein ruhiges, modernes Ergebnis — garantiert.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KUNDENSTIMMEN -->
+  <section id="kundenstimmen" class="section soft">
+    <div class="wrap">
+      <div class="sectionHead reveal">
+        <div>
+          <h2>Kundenstimmen</h2>
+          <p class="muted">Kurz, ehrlich — was Menschen wirklich wahrnehmen.</p>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Genau die Ruhe, die ich gesucht habe. Elegant & frisch.“</p>
+          <span class="muted">— Lina</span>
+        </article>
+        <article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Ich musste nicht lang überlegen — das ist richtig angenehm.“</p>
+          <span class="muted">— Yusuf</span>
+        </article>
+        <article class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Die Farben passen so schön zusammen. Null kitschig.“</p>
+          <span class="muted">— Meryem</span>
+        </article>
+      </div>
+
+      <div class="ctaBand reveal">
+        <div>
+          <h3>Bereit?</h3>
+          <p class="muted">Wähle einen Stil und sende die Bestellung per WhatsApp.</p>
+        </div>
+        <button class="btn btnPrimary touch" id="scrollToProducts" type="button">Zur Auswahl</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="wrap">
+      <div class="sectionHead reveal">
+        <div>
+          <h2>FAQ</h2>
+          <p class="muted">Kurz & klar — iOS-freundlich, gut klickbar.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details class="faqItem reveal">
+          <summary class="touch">
+            <span>Gibt es Lieferung?</span><i class="chev" aria-hidden="true"></i>
+          </summary>
+          <p class="muted">Aktuell nur Abholung. So bleibt alles frisch und sicher gebunden.</p>
+        </details>
+
+        <details class="faqItem reveal">
+          <summary class="touch">
+            <span>Heute oder Morgen?</span><i class="chev" aria-hidden="true"></i>
+          </summary>
+          <p class="muted">Du wählst oben Abholtag + Uhrzeit. Wir bestätigen kurz per WhatsApp.</p>
+        </details>
+
+        <details class="faqItem reveal">
+          <summary class="touch">
+            <span>Sind die Fotos exakt?</span><i class="chev" aria-hidden="true"></i>
+          </summary>
+          <p class="muted">Fotos zeigen den Stil. Saisonale Blumen können variieren — Ergebnis bleibt gleichwertig.</p>
+        </details>
+
+        <details class="faqItem reveal">
+          <summary class="touch">
+            <span>Kann ich einen Text/Wunsch angeben?</span><i class="chev" aria-hidden="true"></i>
+          </summary>
+          <p class="muted">Ja. Im Checkout-Sheet kannst du eine Notiz hinzufügen (z.B. „ohne Lilien“).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footerGrid">
+      <div>
+        <div class="footBrand">Blütenhaus</div>
+        <p class="muted">Handgebunden · Nur Abholung · Bestellung per WhatsApp</p>
+
+        <div class="newsletter">
+          <label class="muted" for="newsMail">Updates (optional)</label>
+          <div class="newsRow">
+            <input id="newsMail" class="input" type="email" placeholder="E-Mail (optional)" />
+            <button class="btn btnPrimary btnMini touch" id="fakeSubscribe" type="button">OK</button>
+          </div>
+          <p class="tiny muted">Demo — später mit Newsletter-Tool verbinden.</p>
+        </div>
+      </div>
+
+      <div class="footLinks">
+        <a href="#auswahl">Auswahl</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footLegal muted">
+        <div>Impressum / Datenschutz (später)</div>
+        <div class="tiny">© <span id="year"></span> Blütenhaus</div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="modalOverlay" id="modalOverlay" aria-hidden="true"></div>
+<aside class="modal" id="productModal" aria-label="Produktdetails" aria-hidden="true" role="dialog">
+  <div class="modalHead">
+    <div>
+      <div class="modalKicker">Details</div>
+      <h3 id="modalTitle">—</h3>
+    </div>
+    <button class="iconBtn touch" id="closeModal" type="button" aria-label="Schließen">✕</button>
+  </div>
+
+  <div class="modalBody">
+    <div class="modalMedia">
+      <img id="modalImg" alt="" />
+      <span class="modalTag" id="modalTag">—</span>
+    </div>
+
+    <div class="modalInfo">
+      <div class="modalRow">
+        <strong id="modalPrice">—</strong>
+        <span class="muted" id="modalStock">—</span>
+      </div>
+
+      <p class="muted" id="modalDesc">—</p>
+
+      <div class="chips">
+        <span class="miniChip" id="modalMood">—</span>
+        <span class="miniChip" id="modalSize">—</span>
+        <span class="miniChip" id="modalCare">—</span>
+      </div>
+
+      <div class="modalActions">
+        <div class="qty" aria-label="Menge wählen">
+          <button class="qtyBtn touch" id="modalMinus" type="button" aria-label="Minus">−</button>
+          <span class="qtyValue" id="modalQty">1</span>
+          <button class="qtyBtn touch" id="modalPlus" type="button" aria-label="Plus">+</button>
+        </div>
+
+        <button class="btn btnPrimary touch" id="modalAdd" type="button">In den Warenkorb</button>
+      </div>
+
+      <div class="tiny muted">Hinweis: Stil bleibt — Blumen sind saisonal.</div>
+    </div>
+  </div>
+</aside>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+
+<aside class="drawer" id="drawer" aria-label="Warenkorb" aria-hidden="true">
+  <div class="drawerHead">
+    <h3>Warenkorb</h3>
+    <button class="iconBtn touch" id="closeCart" type="button" aria-label="Schließen">✕</button>
+  </div>
+
+  <div class="drawerBody" id="cartItems">
+    <p class="muted">Noch nichts im Warenkorb.</p>
+  </div>
+
+  <div class="drawerFoot">
+    <div class="sumRow">
+      <span class="muted">Zwischensumme</span>
+      <strong id="subtotal">0,00 €</strong>
+    </div>
+
+    <button class="btn btnPrimary btnFull touch" id="openCheckout" type="button">
+      Weiter zur Bestellung
+    </button>
+
+    <button class="btn btnGhost btnFull touch" id="clearCart" type="button">
+      Warenkorb leeren
+    </button>
+
+    <p class="tiny muted">Nur Abholung. Keine Zahlung integriert (optional später).</p>
+  </div>
+</aside>
+
+<!-- CHECKOUT SHEET -->
+<div class="sheetOverlay" id="sheetOverlay" aria-hidden="true"></div>
+<aside class="sheet" id="checkoutSheet" aria-label="Bestellung" aria-hidden="true">
+  <div class="sheetHead">
+    <div>
+      <div class="modalKicker">Bestellung</div>
+      <h3>Abholung & Kontakt</h3>
+    </div>
+    <button class="iconBtn touch" id="closeCheckout" type="button" aria-label="Schließen">✕</button>
+  </div>
+
+  <div class="sheetBody">
+    <div class="twoCol">
+      <div class="field">
+        <label for="custName">Name</label>
+        <input id="custName" class="input" type="text" placeholder="Vorname Nachname" autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="custPhone">Telefon</label>
+        <input id="custPhone" class="input" type="tel" placeholder="+49 …" autocomplete="tel" inputmode="tel" />
+      </div>
+    </div>
+
+    <div class="twoCol">
+      <div class="field">
+        <label for="pickupDay2">Abholung</label>
+        <select id="pickupDay2" class="select touch"></select>
+      </div>
+      <div class="field">
+        <label for="pickupTime2">Uhrzeit</label>
+        <select id="pickupTime2" class="select touch"></select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="orderNote">Notiz (optional)</label>
+      <textarea id="orderNote" class="input textarea" rows="3" placeholder="z.B. ohne Lilien / Karte: „Alles Gute“ / bitte sehr ruhig…"></textarea>
+    </div>
+
+    <div class="summaryBox">
+      <div class="sumRow">
+        <span class="muted">Zwischensumme</span>
+        <strong id="subtotal2">0,00 €</strong>
+      </div>
+      <div class="sumRow muted">
+        <span>Abholung</span>
+        <span id="pickupOut">—</span>
+      </div>
+      <div class="sumRow muted">
+        <span>Positionen</span>
+        <span id="itemsOut">—</span>
+      </div>
+    </div>
+
+    <a class="btn btnPrimary btnFull touch" id="whatsAppOrder" href="#" target="_blank" rel="noopener">
+      Bestellung per WhatsApp senden
+    </a>
+
+    <button class="btn btnGhost btnFull touch" id="copyOrder" type="button">Bestelltext kopieren</button>
+
+    <p class="tiny muted">WhatsApp-Text wird automatisch generiert. Nummer im JS eintragen.</p>
+  </div>
+</aside>
+
+<!-- iOS STICKY CTA -->
+<div class="sticky" id="sticky">
+  <button class="btn btnPrimary btnFull touch" id="stickyOpenCart" type="button">
+    Warenkorb öffnen <span class="badge badgeInline" id="cartCount2">0</span>
+  </button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
