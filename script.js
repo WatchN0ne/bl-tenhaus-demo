@@ -100,7 +100,7 @@ observeReveals();
    4) Data (9 Products)
 ========================= */
 const PRODUCTS = [
-  { sku:"morgenlicht", name:"Morgenlicht", price:34.90, tag:"neutral", mood:"ruhig · warm", size:"M", care:"2–3 Tage frisch schneiden", stock:5,
+  { sku:"morgenlicht", name:"Chrysanthemen Hortensie Gerbera Schleierkraut", price:34.90, tag:"neutral", mood:"ruhig · warm", size:"M", care:"2–3 Tage frisch schneiden", stock:5,
     desc:"Warme Töne, modern gebunden. Sehr sicher für neutral & danke.",
     img:"914855F6-103E-4AF0-A278-A611AD3F2D1E.jpeg",
     featured: 1
@@ -656,7 +656,7 @@ function updateWhatsAppLink(){
   const wa = $("#whatsAppOrder");
   if(!wa) return;
 
-  const phoneNumber = "015159428123"; // <-- HIER Nummer deiner Mutter einsetzen (ohne +, mit Länderkennung)
+  const phoneNumber = "4915159428123"; // <-- HIER Nummer deiner Mutter einsetzen (ohne +, mit Länderkennung)
   const text = encodeURIComponent(buildOrderText());
   wa.href = `https://wa.me/${phoneNumber}?text=${text}`;
 }
@@ -728,4 +728,30 @@ document.addEventListener("keydown", (e)=>{
   if(sheet?.classList.contains("open")) closeCheckout();
   if(drawer?.classList.contains("open")) closeCart();
 });
+
+const whatsappBtn = document.getElementById("whatsAppOrder");
+
+function updateWhatsAppLink(){
+  if(!whatsappBtn) return;
+
+  if(cart.size === 0){
+    whatsappBtn.href = "#";
+    whatsappBtn.setAttribute("aria-disabled","true");
+    return;
+  }
+
+  let message = "Hallo 🌿%0A";
+  message += "ich möchte folgende Blumen bestellen:%0A%0A";
+
+  cart.forEach(item=>{
+    message += `• ${item.qty}× ${item.name} – ${item.price.toFixed(2)} €%0A`;
+  });
+
+  message += `%0AAbholung: ${pickupDaySelect.value}%0A`;
+  message += "%0AVielen Dank 🌸";
+
+  const phone = "491701234567"; // <-- HIER NUMMER EINTRAGEN
+  whatsappBtn.href = `https://wa.me/${phone}?text=${message}`;
+  whatsappBtn.removeAttribute("aria-disabled");
+}
 
