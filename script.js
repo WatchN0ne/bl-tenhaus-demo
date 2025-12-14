@@ -102,7 +102,7 @@ observeReveals();
 const PRODUCTS = [
   { sku:"morgenlicht", name:"Morgenlicht", price:34.90, tag:"neutral", mood:"ruhig · warm", size:"M", care:"2–3 Tage frisch schneiden", stock:5,
     desc:"Warme Töne, modern gebunden. Sehr sicher für neutral & danke.",
-    img:"https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1600&auto=format&fit=crop",
+    img:"914855F6-103E-4AF0-A278-A611AD3F2D1E.jpeg",
     featured: 1
   },
   { sku:"wiesenrand", name:"Wiesenrand", price:31.90, tag:"thanks", mood:"natürlich", size:"M", care:"frisches Wasser", stock:3,
@@ -728,3 +728,4 @@ document.addEventListener("keydown", (e)=>{
   if(sheet?.classList.contains("open")) closeCheckout();
   if(drawer?.classList.contains("open")) closeCart();
 });
+
