@@ -729,29 +729,46 @@ document.addEventListener("keydown", (e)=>{
   if(drawer?.classList.contains("open")) closeCart();
 });
 
-const whatsappBtn = document.getElementById("whatsAppOrder");
+/* =========================
+   WhatsApp Auto-Update (zentral)
+========================= */
 
-function updateWhatsAppLink(){
+const whatsappBtn = document.getElementById("whatsAppOrder");
+const pickupDaySelect = document.getElementById("pickupDay");
+
+function buildWhatsAppLink(){
   if(!whatsappBtn) return;
 
   if(cart.size === 0){
-    whatsappBtn.href = "#";
-    whatsappBtn.setAttribute("aria-disabled","true");
+    whatsappBtn.href = "javascript:void(0)";
     return;
   }
 
-  let message = "Hallo 🌿%0A";
-  message += "ich möchte folgende Blumen bestellen:%0A%0A";
+  let msg = "Hallo 🌿%0A";
+  msg += "ich möchte folgende Blumen bestellen:%0A%0A";
 
   cart.forEach(item=>{
-    message += `• ${item.qty}× ${item.name} – ${item.price.toFixed(2)} €%0A`;
+    msg += `• ${item.qty}× ${item.name} – ${item.price.toFixed(2)} €%0A`;
   });
 
-  message += `%0AAbholung: ${pickupDaySelect.value}%0A`;
-  message += "%0AVielen Dank 🌸";
+  const pickup = pickupDaySelect ? pickupDaySelect.value : "Heute";
+  msg += `%0AAbholung: ${pickup}%0A`;
+  msg += "%0AVielen Dank 🌸";
 
-  const phone = "491701234567"; // <-- HIER NUMMER EINTRAGEN
-  whatsappBtn.href = `https://wa.me/${phone}?text=${message}`;
-  whatsappBtn.removeAttribute("aria-disabled");
+  const phone = "4915159428123"; // <-- NUMMER DEINER MUTTER
+  whatsappBtn.href = `https://wa.me/${phone}?text=${msg}`;
 }
+
+/* 🔁 AUTOMATISCH aktualisieren */
+document.addEventListener("click", ()=>{
+  buildWhatsAppLink();
+});
+
+pickupDaySelect?.addEventListener("change", ()=>{
+  buildWhatsAppLink();
+});
+
+/* Initial */
+buildWhatsAppLink();
+
 
