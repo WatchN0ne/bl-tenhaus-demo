@@ -819,3 +819,14 @@ h3{font-size: 1.25rem}
   .modalBody{grid-template-columns:1fr}
   .modalMedia img{min-height: 260px}
 }
+
+.roseMark svg path{
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: drawLine 2.4s ease forwards;
+}
+
+@keyframes drawLine{
+  to{ stroke-dashoffset: 0; }
+}
+ 
