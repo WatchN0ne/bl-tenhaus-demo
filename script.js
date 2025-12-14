@@ -107,7 +107,7 @@ const PRODUCTS = [
   },
   { sku:"Wiesenstrauß", name:"Wiesenstrauß", price:31.90, tag:"thanks", mood:"natürlich", size:"M", care:"frisches Wasser", stock:3,
     desc:"Locker, organisch, leicht. Ideal als Danke & Alltag.",
-    img:"https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=1600&auto=format&fit=crop",
+    img:"6D29B8F6-8803-4407-A5B6-693791CA5004.jpeg",
     featured: 2
   },
   { sku:"Bunte Rosenstrauß", name:"Bunte Rosenstrauß", price:27.90, tag:"neutral", mood:"klar · hell", size:"S", care:"kühl stellen", stock:6,
@@ -770,6 +770,7 @@ pickupDaySelect?.addEventListener("change", ()=>{
 
 /* Initial */
 buildWhatsAppLink();
+
 
 
 
